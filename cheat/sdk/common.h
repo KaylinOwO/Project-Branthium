@@ -25,8 +25,6 @@
 #include <fstream>
 #include <direct.h>
 
-#define COGNITOKEY "gjDlgzRznEDRsfaO1pADDIoRsoRseVqC3lteuxDQR1MP7Cp7XZC15cX0WPI57jUr"
-
 #pragma comment (lib, "d3d9.lib")
 
 #include "dxsdk/d3d9.h"
@@ -56,7 +54,6 @@ inline float interval_per_tick;
 #include "include/math.h"
 #include "include/basestruct.h"
 
-inline std::map<int, ITEM_NAME> g_ItemHash;
 #include "include/utils.h"
 
 #include "draw/draw.h"
@@ -64,17 +61,9 @@ inline std::map<int, ITEM_NAME> g_ItemHash;
 #include "entity/entity.h"
 #include "weapon/weapon.h"
 #include "weapon/prediction.h"
-#include "pattern/pattern.h"
 
 #include "../modules/caching/caching.h"
 #include "../modules/aimbot/aimbot.h"
 #include "../modules/visuals/visuals.h"
 
-inline uintptr_t forcejump;
 inline CGlobalVars global_vars;
-inline CClientState client_state;
-inline CInput input;
-inline CUserCmd usercmd;
-inline CNetChan netchan;
-
-inline Vector3 oAngles = Vector3{ 0,0,0 };

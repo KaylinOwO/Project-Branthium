@@ -8,11 +8,6 @@ namespace entity
 		uint64_t name = read<uint64_t>( ent + OFFSET_NAME);
 		return (name == 125780153691248);
 	}
-	inline bool IsItem(uintptr_t ent)
-	{
-		return read<int>( ent + OFFSET_ITEM_GLOW) >= 1358917120;
-	}
-
 	inline bool IsAlive(uintptr_t ent)
 	{
 		return read<int>( ent + OFFSET_LIFE_STATE) == 0;
@@ -73,17 +68,14 @@ namespace entity
 	{
 		return read<float>( ent + OFFSET_VISIBLE_TIME);
 	}
-
 	inline Vector3 GetCamPos(uintptr_t ent)
 	{
 		return read<Vector3>( ent + OFFSET_CAMERAPOS);
 	}
-
 	inline QAngle GetSwayAnglesA(uintptr_t ent)
 	{
 		return read<QAngle>( ent + OFFSET_BREATH_ANGLES);
 	}
-
 	inline QAngle GetRecoil(uintptr_t ent)
 	{
 		return read<QAngle>( ent + OFFSET_AIMPUNCH);
@@ -105,15 +97,6 @@ namespace entity
 		oVisTime[i] = VisCheck;
 
 		return IsVis;
-	}
-	inline Vector3 GetPosition(uintptr_t ent)
-	{
-		return read<Vector3>( ent + OFFSET_ORIGIN);
-	}
-
-	inline bool IsGlowingItem(uintptr_t ent)
-	{
-		return read<int>( ent + OFFSET_ITEM_GLOW) >= 1363184265;
 	}
 	inline void EnableGlowPlayer(uintptr_t ent)
 	{

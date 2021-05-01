@@ -16,7 +16,7 @@ void CVisuals::PlayerESP(uintptr_t entity, uintptr_t localent)
 	/*overlay esp*/
 	Vector3 FeetPosition = entity::GetEntityBasePosition(entity);
 	Vector3 HeadPosition = entity::GetEntityBonePosition(entity, 8, FeetPosition);
-	Vector3 BasePosition = WorldToScreen(entity::GetPosition(entity), Width, Height);
+	Vector3 BasePosition = WorldToScreen(entity::GetEntityBasePosition(entity), Width, Height);
 	if (BasePosition.x > 0 && BasePosition.y > 0)
 	{
 		Vector3 CenterHitbox = WorldToScreen(entity::GetEntityBonePosition(entity, 2, FeetPosition), Width, Height);

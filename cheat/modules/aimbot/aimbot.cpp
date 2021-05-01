@@ -65,8 +65,6 @@ QAngle CAimbot::GetAimAngle(uint64_t aimentity)
 	return AimAngle;
 }
 
-float AimSpeed = 1.5f;
-
 void CAimbot::Run(uint64_t entity, QAngle aimangle, int aimi)
 {
 	static double realkey = VK_LBUTTON;

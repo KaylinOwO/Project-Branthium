@@ -3,7 +3,6 @@ bool ShowMenu = false;
 
 void RunModules() {
 	auto EntityCachePlayerList = CachedPlayerList;
-	auto EntityCacheItemList = CachedItemList;
 	float ClosestDistance = FLT_MAX;
 	uint64_t ClosestEntityToCrosshair = NULL;
 	int ClosestEntityIndex = -1;

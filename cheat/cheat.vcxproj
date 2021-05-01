@@ -165,7 +165,6 @@
     <ClCompile Include="sdk\Imgui\imgui_impl_win32.cpp" />
     <ClCompile Include="sdk\Imgui\imgui_widgets.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="sdk\pattern\pattern.cpp" />
     <ClCompile Include="sdk\weapon\weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -183,7 +182,6 @@
     <ClInclude Include="sdk\include\structs.h" />
     <ClInclude Include="sdk\include\utils.h" />
     <ClInclude Include="sdk\include\vars.h" />
-    <ClInclude Include="sdk\pattern\pattern.h" />
     <ClInclude Include="sdk\weapon\prediction.h" />
     <ClInclude Include="sdk\weapon\weapon.h" />
     <ClInclude Include="sdk\include\win_utils.h" />

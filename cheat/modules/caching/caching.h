@@ -1,7 +1,7 @@
 #pragma once
 #include "../../sdk/common.h"
 
-inline std::vector<EntityCache> CachedPlayerList; inline std::vector<ItemCacheS> CachedItemList;
+inline std::vector<EntityCache> CachedPlayerList;
 inline void PlayerCache()
 {
 	while (true)
