@@ -305,8 +305,8 @@ inline void DrawFilledCircle(float x, float y, float radius, RGBA* color, float 
 }
 inline void DrawBox(float X, float Y, float W, float H, const ImU32& color)
 {
-	ImGui::GetOverlayDrawList()->AddRect(ImVec2(X + 1, Y + 1), ImVec2(((X + W) - 1), ((Y + H) - 1)), ImGui::ColorConvertFloat4ToU32(ImVec4(1 / 255.0f, 1 / 255.0f, 1 / 255.0f, 255.f / 255.0)));
-	ImGui::GetOverlayDrawList()->AddRect(ImVec2(X, Y), ImVec2(X + W, Y + H), ImGui::ColorConvertFloat4ToU32(ImVec4(1 / 255.0f, 1 / 255.0f, 1 / 255.0f, 255.f / 255.0)));
+	ImGui::GetOverlayDrawList()->AddRect(ImVec2(X + 1, Y + 1), ImVec2(((X + W) - 1), ((Y + H) - 1)), ImGui::GetColorU32(color));
+	ImGui::GetOverlayDrawList()->AddRect(ImVec2(X, Y), ImVec2(X + W, Y + H), ImGui::GetColorU32(color));
 }
 inline void DrawCorneredBox(float X, float Y, float W, float H, const ImU32& color, float thickness) {
 	float lineW = (W / 3);
