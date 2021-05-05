@@ -12,11 +12,11 @@
 #define OFFSET_MAX_SHIELD			0x174			//m_shieldHealth +0x4
 #define OFFSET_ITEM_ID	0x1618
 
-#define OFFSET_IN_ATTACK 0x0408f2b0
-#define OFFSET_IN_JUMP 0x0408f328
-#define OFFSET_IN_RELOAD 0x0408f2d0
+#define OFFSET_IN_ATTACK 0x040c1b90
+#define OFFSET_IN_JUMP 0x040c1c00
+#define OFFSET_IN_RELOAD 0x040c1bb0
 
-#define OFFSET_GLOBALVARS 0x1278220
+#define OFFSET_GLOBALVARS 0x128bf40
 
 #define OFFSET_ORIGIN				0x14C			//m_vecAbsOrigin
 #define OFFSET_BONES				0xF38 			//m_bConstrainBetweenEndpoints 
