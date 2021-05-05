@@ -12,7 +12,7 @@ inline void PlayerCache()
 		if (baseent == 0)
 			continue;
 
-		for (int i = 0; i < max_clients + 1; i++)
+		for (int i = 0; i < 128; i++)
 		{
 			uint64_t localent = read<uint64_t>(oBaseAddress + OFFSET_LOCAL_ENT);
 			if (!localent) continue;
