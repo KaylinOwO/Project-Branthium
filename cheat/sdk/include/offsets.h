@@ -31,7 +31,7 @@
 
 #define OFFSET_ITEM_GLOW            0x2c0 //m_highlightFunctionBits
 
-#define OFFSET_CURRENT_WEAPON				0x19ec //m_latestPrimaryWeapons
+#define OFFSET_CURRENT_WEAPON				0x1A6C //m_latestPrimaryWeapons
 #define OFFSET_BULLET_SPEED         0x1ED0
 #define OFFSET_BULLET_GRAVITY         0x1ED8
 #define OFFSET_ZOOM_FOV             0x16F8 + 0xb8 //m_playerData + m_curZoomFOV
