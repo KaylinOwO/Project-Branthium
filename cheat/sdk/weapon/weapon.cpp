@@ -3,7 +3,7 @@
 void WeaponXEntity::update(uintptr_t LocalPlayer)
 {
 	uint64_t entitylist = oBaseAddress + OFFSET_ENTITYLIST;
-	uint64_t wephandle = read<uint64_t>(LocalPlayer + 0x19EC /*active weapon*/);
+	uint64_t wephandle = read<uint64_t>(LocalPlayer + OFFSET_CURRENT_WEAPON /*active weapon*/);
 
 	wephandle &= 0xffff;
 
