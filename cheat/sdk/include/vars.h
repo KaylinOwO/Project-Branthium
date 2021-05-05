@@ -13,7 +13,7 @@ namespace vars {
 		inline bool enabled = true;
 
 		namespace players {
-			inline bool name = true, health = true, shield = true, distance = true, glow = true;
+			inline bool name = true, health = true, shield = true, distance = true, box = true, glow = true;
 			inline float distancelimit = 500;
 		}
 	}

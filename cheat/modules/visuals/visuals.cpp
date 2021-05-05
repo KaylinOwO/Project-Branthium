@@ -20,6 +20,10 @@ void CVisuals::PlayerESP(uintptr_t entity, uintptr_t localent)
 	if (BasePosition.x > 0 && BasePosition.y > 0)
 	{
 		Vector3 CenterHitbox = WorldToScreen(entity::GetEntityBonePosition(entity, 2, FeetPosition), Width, Height);
+		Vector3 HeadHitbox = WorldToScreen(HeadPosition, Width, Height);
+		Vector3 FeetHitbox = WorldToScreen(FeetPosition, Width, Height);
+		float box_height = HeadHitbox.y - FeetHitbox.y;
+		float box_width = box_height / 1.2f;
 		int health = read<int>(entity + OFFSET_HEALTH);
 		int shield = read<int>(entity + OFFSET_SHIELD);
 		ImColor HealthColor = ImColor(min(510 * (100 - health) / 100, 255), min(510 * health / 100, 255), 25, 255);
@@ -32,6 +36,10 @@ void CVisuals::PlayerESP(uintptr_t entity, uintptr_t localent)
 
 			int iY = 0;
 
+			if (vars::visuals::players::box)
+			{
+				DrawBox(CenterHitbox.x, FeetHitbox.y, box_width, box_height, IM_COL32(255, 255, 255, 255));
+			}
 			if (vars::visuals::players::name)
 			{
 				DrawOutlinedText(m_pFont, "player", ImVec2(CenterHitbox.x, CenterHitbox.y + iY), 12, IM_COL32(255, 255, 255, 255), true);
