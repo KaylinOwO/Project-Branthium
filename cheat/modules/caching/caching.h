@@ -18,8 +18,8 @@ inline void PlayerCache()
 			if (!localent) continue;
 
 			uint64_t centity = read<uint64_t>(entitylist + ((uint64_t)i << 5));
-			int health = read<int>(centity + OFFSET_HEALTH);
 			if (!entity::IsPlayer(centity)) continue;
+			int health = read<int>(centity + OFFSET_HEALTH);
 			if (health < 1 || entity::GetTeam(centity) == entity::GetTeam(localent)) continue;
 
 			EntityCache EntityCache{ };
