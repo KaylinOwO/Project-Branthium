@@ -10,7 +10,7 @@ void CVisuals::PlayerESP(uintptr_t entity, uintptr_t localent)
 	if (vars::visuals::players::glow)
 		entity::EnableGlowPlayer(entity);
 	else
-		entity::EnableGlowPlayer(entity);
+		entity::DisablePlayerGlow(entity);
 
 
 	/*overlay esp*/
