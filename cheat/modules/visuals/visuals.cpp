@@ -42,7 +42,12 @@ void CVisuals::PlayerESP(uintptr_t entity, uintptr_t localent)
 			}
 			if (vars::visuals::players::name)
 			{
-				DrawOutlinedText(m_pFont, "player", ImVec2(CenterHitbox.x, CenterHitbox.y + iY), 12, IM_COL32(255, 255, 255, 255), true);
+				DrawOutlinedText(m_pFont, XorStr("player"), ImVec2(CenterHitbox.x, CenterHitbox.y + iY), 12, IM_COL32(255, 255, 255, 255), true);
+				iY += 12;
+			}
+			if (vars::visuals::players::knocked && entity::IsKnocked(entity))
+			{
+				DrawOutlinedText(m_pFont, XorStr("knocked"), ImVec2(CenterHitbox.x, CenterHitbox.y + iY), 12, IM_COL32(0, 191, 255, 255), true);
 				iY += 12;
 			}
 			if (vars::visuals::players::health)
