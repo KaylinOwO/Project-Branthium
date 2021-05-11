@@ -27,7 +27,7 @@
 #define OFFSET_NameList 0x81AF4C0 // //0x81330F0
 
 #define OFFSET_MATRIX                  0x1B3BD0  
-#define OFFSET_VIEWRENDER                0x40BF2E8//  0x408B8E8  
+#define OFFSET_VIEWRENDER                0x40BF368//  0x408B8E8  
 
 #define OFFSET_ITEM_GLOW            0x2c0 //m_highlightFunctionBits
 
