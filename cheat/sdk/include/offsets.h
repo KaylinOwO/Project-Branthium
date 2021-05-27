@@ -1,7 +1,7 @@
 #define ENTITY_SIZE_DEF				0x42E0			//biggest entity offset
 
-#define OFFSET_ENTITYLIST			0x18EDA78 // //0x18da3f8 //cl_entitylist
-#define OFFSET_LOCAL_ENT			0x1C9D198 // //0x1c89a78   //LocalPlayer
+#define OFFSET_ENTITYLIST			0x18eda78 // //0x18da3f8 //cl_entitylist
+#define OFFSET_LOCAL_ENT			0x1c9d198 // //0x1c89a78   //LocalPlayer
 
 
 #define OFFSET_TEAM					0x448		//m_iTeamNum	
@@ -12,9 +12,9 @@
 #define OFFSET_MAX_SHIELD			0x174			//m_shieldHealth +0x4
 #define OFFSET_ITEM_ID	0x1618
 
-#define OFFSET_IN_ATTACK 0x040c1b90
-#define OFFSET_IN_JUMP 0x040c1c00
-#define OFFSET_IN_RELOAD 0x040c1bb0
+#define OFFSET_IN_ATTACK 0x040c1cf0
+#define OFFSET_IN_JUMP 0x040c1d88
+#define OFFSET_IN_RELOAD 0x040c1d30
 
 #define OFFSET_GLOBALVARS 0x128bf40
 
@@ -24,10 +24,10 @@
 #define OFFSET_CAMERAPOS			0x1ED0			
 #define OFFSET_VIEWANGLES			0x2518 			 
 #define OFFSET_OBSERVING_TARGET		0x3350 			//m_hObserverTarget
-#define OFFSET_NameList 0x81AF4C0 // //0x81330F0
+#define OFFSET_NameList 0x81af640 // //0x81330F0
 
-#define OFFSET_MATRIX                  0x1B3BD0  
-#define OFFSET_VIEWRENDER                0x40BF368//  0x408B8E8  
+#define OFFSET_MATRIX                  0x1b3bd0  
+#define OFFSET_VIEWRENDER                0x40bf468//  0x408B8E8  
 
 #define OFFSET_ITEM_GLOW            0x2c0 //m_highlightFunctionBits
 
