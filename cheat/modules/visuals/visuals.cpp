@@ -36,6 +36,14 @@ void CVisuals::PlayerESP(uintptr_t entity, uintptr_t localent)
 
 			int iY = 0;
 
+			if (vars::visuals::players::debug_bones)
+			{
+				for (int i = 0; i < 300; i++) // to save runtime only doing 300 which seems to show most if not all bones
+				{
+					Vector3 BonePos = WorldToScreen(entity::GetEntityBonePosition(entity, i, FeetPosition), Width, Height);
+					DrawOutlinedText(m_pFont, std::to_string(i), ImVec2(BonePos.x, BonePos.y), 12, IM_COL32(255, 255, 255, 255), true); // sussy baka code
+				}
+			}
 			if (vars::visuals::players::box)
 			{
 				DrawBox(CenterHitbox.x, FeetHitbox.y, box_width, box_height, IM_COL32(255, 255, 255, 255));
