@@ -87,6 +87,7 @@ void RunSoftware() {
 				if (tab == 1) {
 
 					ImGui::Checkbox(XorStr("ESP"), &vars::visuals::enabled);
+					ImGui::Checkbox(XorStr("Debug Bones"), &vars::visuals::players::debug_bones);
 					ImGui::Checkbox(XorStr("Player Box"), &vars::visuals::players::box);
 					ImGui::Checkbox(XorStr("Player Knocked"), &vars::visuals::players::knocked);
 					ImGui::Checkbox(XorStr("Player Name"), &vars::visuals::players::name);
