@@ -46,7 +46,7 @@ void CVisuals::PlayerESP(uintptr_t entity, uintptr_t localent)
 			}
 			if (vars::visuals::players::box)
 			{
-				DrawBox(CenterHitbox.x, FeetHitbox.y, box_width, box_height, IM_COL32(255, 255, 255, 255));
+				DrawBox(HeadHitbox.x - box_width / 2, FeetHitbox.y, box_width, box_height, IM_COL32(255, 255, 255, 255));
 			}
 			if (vars::visuals::players::name)
 			{
